@@ -1,0 +1,12 @@
+url: http://www.lanbeidianqi.com
+
+title: 蓝贝电器
+
+keywords: 蓝贝电器
+
+description: 蓝贝电器
+
+exclude:
+  - README.md
+  - style.css
+  - style.js

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
+<!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh">
+<!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/assets/application.css">
+    <!--[if lt IE 9]>
+      <script src="/assets/html5shiv.min.js"></script>
+      <script src="/assets/respond.min.js"></script>
+    <![endif]-->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?0a6e5f01f86e8f7820cae3c1ad8bcc15";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  </head>
+  <body class="front no-trans">
+    <div class="scrollToTop"><i class="fa fa-chevron-up"></i></div>
+    <div class="page-wrapper">
+      <header class="header fixed clearfix">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="header-left clearfix">
+                <div class="logo"><a href="{{ site.url }}"><img id="logo" src="/images/assets/lanbei-logo.png" alt="蓝贝电器logo"></a></div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="header-right clearfix">
+                <div class="main-navigation animated">
+                  <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                          <span class="sr-only">导航</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                      </div>
+                      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}">首页</a></li>
+                          <li class="{% if page.category == 'about' %}dropdown active{% else %}dropdown{% endif %}">
+                            <a href="{{ site.url }}/lanbei/" class="dropdown-toggle" data-toggle="dropdown">认识蓝贝</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="{{ site.url }}/about/">企业简介</a></li>
+                              <li><a href="{{ site.url }}/history/">企业历史</a></li>
+                              <li><a href="{{ site.url }}/honors/">企业荣誉</a></li>
+                              <li><a href="{{ site.url }}/superiority/">产品优势</a></li>
+                              <li><a href="{{ site.url }}/story/">品牌故事</a></li>
+                            </ul>
+                          </li>
+                          <li class="{% if page.category == 'products' %}dropdown mega-menu active{% else %}dropdown mega-menu{% endif %}">
+                            <a href="{{ site.url }}/products/" class="dropdown-toggle" data-toggle="dropdown">产品中心</a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <div class="row">
+                                  <div class="col-sm-4 col-md-6">
+                                    <h4>蓝贝电器 - 低碳生活专家|系统节能工程专家</h4>
+                                    <p>航天技术，军工产品</p>
+                                    <img src="/images/assets/products.png" alt="蓝贝电器产品">
+                                  </div>
+                                  <div class="col-sm-8 col-md-6">
+                                    <h4><a href="{{ site.url }}/products/">产品中心</a></h4>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <div class="divider"></div>
+                                        <ul class="menu">
+                                          <li><a href="{{ site.url }}/intelligence/"><i class="fa fa-angle-right"></i>智能系列</a></li>
+                                          <li><a href="{{ site.url }}/kinetic-energy/"><i class="fa fa-angle-right"></i>聚能系列</a></li>
+                                          <li><a href="{{ site.url }}/an-neng/"><i class="fa fa-angle-right"></i>安能系列</a></li>
+                                          <li><a href="{{ site.url }}/energy/"><i class="fa fa-angle-right"></i>动能系列</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <div class="divider"></div>
+                                        <ul class="menu">
+                                          <li><a href="{{ site.url }}/vaillant/"><i class="fa fa-angle-right"></i>威能系列</a></li>
+                                          <li><a href="{{ site.url }}/super/"><i class="fa fa-angle-right"></i>超能系列</a></li>
+                                          <li><a href="{{ site.url }}/almighty/"><i class="fa fa-angle-right"></i>全能系列</a></li>
+                                          <li><a href="{{ site.url }}/high-temperature-baking/"><i class="fa fa-angle-right"></i>高温烘烤系列</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="{% if page.category == 'join' %}dropdown active{% else %}dropdown{% endif %}">
+                            <a class="dropdown-toggle" data-toggle="dropdown">招商加盟</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="{{ site.url }}/join/">招商政策</a></li>
+                              <li><a href="{{ site.url }}/process/">加盟流程</a></li>
+                              <li><a href="{{ site.url }}/stores/">加盟店查询</a></li>
+                            </ul>
+                          </li>
+
+                          <li class="{% if page.category == 'case' %}active{% endif %}"><a href="{{ site.url }}/case/">工程案例</a></li>
+                          <li class="{% if page.category == 'support' %}dropdown active{% else %}dropdown{% endif %}">
+                            <a class="dropdown-toggle" data-toggle="dropdown">服务支持</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="{{ site.url }}/support/">售后服务热线</a></li>
+                              <li><a href="{{ site.url }}/faq/">常见故障识别及处理</a></li>
+                              <li><a href="{{ site.url }}/download/">技术资料下载</a></li>
+                            </ul>
+                          </li>
+                          <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">新闻中心</a></li>
+                          <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">联系我们</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      {{ content }}
+      <footer id="footer">
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-content">
+                  <div class="logo-footer"><img id="logo-footer" src="/images/assets/lanbei-logo-foot.png" alt="蓝贝电器logo"></div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p>佛山市顺德区蓝贝电器设备有限公司成立于2004年，是一家集科研、生产、销售为一体的创新型企业。<a href="{{ site.url }}/about/" class="link"><span>认识蓝贝</span></a></p>
+                      <h2><img class="img-responsive" src="{{ site.url }}/images/assets/weixin.jpg" alt="蓝贝官方微信"></h2>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul class="list-icons">
+                        <li><i class="fa fa-map-marker pr-10"></i> 佛山市顺德区北滘镇碧江居委会碧桂路坤洲路段</li>
+                        <li><i class="fa fa-phone pr-10"></i> 0757-26329338</li>
+                        <li><i class="fa fa-fax pr-10"></i> 0757-26657701</li>
+                        <li><i class="fa fa-envelope-o pr-10"></i> <a href="mailto:lanbei8899@163.com">lanbei8899@163.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="space-bottom hidden-lg hidden-xs"></div>
+              <div class="col-sm-6 col-md-2">
+                <div class="footer-content">
+                  <h2>栏目导航</h2>
+                  <nav>
+                    <ul class="nav nav-pills nav-stacked">
+                      <li><a href="{{ site.url }}/about/">认识蓝贝</a></li>
+                      <li><a href="{{ site.url }}/join/">招商加盟</a></li>
+                      <li><a href="{{ site.url }}/case/">工程案例</a></li>
+                      <li><a href="{{ site.url }}/support/">服务支持</a></li>
+                      <li><a href="{{ site.url }}/news/">新闻中心</a></li>
+                      <li><a href="{{ site.url }}/contact/">联系我们</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 col-md-offset-1">
+                <div class="footer-content">
+                  <h2>产品中心</h2>
+                  <div class="gallery row">
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/intelligence.jpg" alt="智能系列">
+                        <a href="{{ site.url }}/intelligence/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/kinetic-energy.jpg" alt="聚能系列">
+                        <a href="{{ site.url }}/kinetic-energy/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/an-neng.jpg" alt="安能系列">
+                        <a href="{{ site.url }}/an-neng/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/energy.jpg" alt="动能系列">
+                        <a href="{{ site.url }}/energy/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/vaillant.jpg" alt="威能系列">
+                        <a href="{{ site.url }}/vaillant/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/super.jpg" alt="超能系列">
+                        <a href="{{ site.url }}/super/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/almighty.jpg" alt="全能系列">
+                        <a href="{{ site.url }}/almighty/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="gallery-item col-xs-4">
+                      <div class="overlay-container">
+                        <img src="/images/assets/high-temperature-baking.jpg" alt="高温烘烤系列">
+                        <a href="{{ site.url }}/high-temperature-baking/" class="overlay small">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-bottom hidden-lg hidden-xs"></div>
+          </div>
+        </div>
+        <div class="subfooter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Copyright © 2004-2019 佛山市顺德区蓝贝电器设备有限公司 | <a href="{{ site.url }}/sitemap.xml">Sitemap</a></p>
+              </div>
+              <div class="col-md-6">
+                <p align="right">网站建设与维护：<a href="https://gdky.net" target="_blank">开源网络</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="/assets/application.js"></script>
+  </body>
+</html>
