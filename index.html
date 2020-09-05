@@ -242,30 +242,6 @@ full_title: 能道-十大最具成长力品牌
   </div>
 </div>
 <a href="{{ site.url }}/about/"><img src="{{ site.url }}/images/home/about-1.jpg" alt="蓝贝简介"></a>
-<div class="section clearfix">
-  <div class="container">
-	<div class="row">
-	  <div class="col-md-12"><h2>产品优势</h2></div>
-    </div>
-  </div>
-</div>
-<a href="{{ site.url }}/superiority/"><img src="{{ site.url }}/images/home/about-2.jpg" alt="产品优势"></a>
-<div class="section clearfix">
-  <div class="container">
-	<div class="row">
-	  <div class="col-md-12"><h2>先进的设备</h2></div>
-	</div>
-  </div>
-</div>
-<img src="{{ site.url }}/images/home/about-3.jpg" alt="先进的设备">
-<div class="section clearfix">
-  <div class="container">
-	<div class="row">
-	  <div class="col-md-12"><h2>科学的管理</h2></div>
-	</div>
-  </div>
-</div>
-<img src="{{ site.url }}/images/home/about-4.jpg" alt="科学的管理">
 <section class="main-container object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
   <div class="container">
 	<div class="row">
@@ -315,58 +291,10 @@ full_title: 能道-十大最具成长力品牌
 			<a href="{{ site.url }}/energy/" class="btn btn-default">查看详情</a>
 		  </div>
 		</div>
-		<div class="col-sm-6 col-md-3 isotope-item app-development">
-		  <div class="box-style-1 white-bg">
-			<div class="overlay-container">
-			  <img src="/images/products/nd-18kz.jpg" alt="威能系列">
-			  <a href="{{ site.url }}/vaillant/" class="overlay small"><i class="fa fa-search"></i></a>
-			</div>
-			<h3>威能系列</h3>
-			<a href="{{ site.url }}/vaillant/" class="btn btn-default">查看详情</a>
-		  </div>
-		</div>
-		<div class="col-sm-6 col-md-3 isotope-item web-design">
-		  <div class="box-style-1 white-bg">
-			<div class="overlay-container">
-			  <img src="/images/products/nd-36ky.jpg" alt="超能系列">
-			  <a href="{{ site.url }}/super/" class="overlay small"><i class="fa fa-search"></i></a>
-			</div>
-			<h3>超能系列</h3>
-			<a href="{{ site.url }}/super/" class="btn btn-default">查看详情</a>
-		  </div>
-		</div>
-		<div class="col-sm-6 col-md-3 isotope-item app-development">
-		  <div class="box-style-1 white-bg">
-			<div class="overlay-container">
-			  <img src="/images/products/nd-36ks.jpg" alt="全能系列">
-			  <a href="{{ site.url }}/almighty/" class="overlay small"><i class="fa fa-search"></i></a>
-			</div>
-			<h3>全能系列</h3>
-			<a href="{{ site.url }}/almighty/" class="btn btn-default">查看详情</a>
-		  </div>
-		</div>
-		<div class="col-sm-6 col-md-3 isotope-item web-design">
-		  <div class="box-style-1 white-bg">
-			<div class="overlay-container">
-			  <img src="/images/products/nd-36kh.jpg" alt="高温烘烤系列">
-			  <a href="{{ site.url }}/high-temperature-baking/" class="overlay small"><i class="fa fa-search"></i></a>
-			</div>
-			<h3>高温烘烤系列</h3>
-			<a href="{{ site.url }}/high-temperature-baking/" class="btn btn-default">查看详情</a>
-		  </div>
-		</div>
 	  </div>
 	</div>
   </div>
 </section>
-<div class="section clearfix">
-  <div class="container">
-	<div class="row">
-	  <div class="col-md-12"><h2><a href="{{ site.url }}/join/">招商加盟</a></h2></div>
-    </div>
-  </div>
-</div>
-<a href="{{ site.url }}/join/"><img src="{{ site.url }}/images/pages/join.jpg" alt="招商加盟"></a>
 <div class="section clearfix">
   <div class="container">
 	<div class="row">
@@ -569,43 +497,6 @@ full_title: 能道-十大最具成长力品牌
 			  </div>
 			</div>
 		  </div>
-		</div>
-	  </div>
-	</div>
-  </div>
-</div>
-<div class="section clearfix">
-  <div class="container">
-	<div class="row">
-	  <div class="col-md-12">
-		<h2><a href="{{ site.url }}/case/">工程案例</a></h2>
-		<div class="owl-carousel carousel-autoplay">{% for post in site.categories["case"] %}
-		  <div class="image-box object-non-visible" data-animation-effect="fadeInLeft" data-effect-delay="300">
-			<div class="overlay-container"><img src="/images/case/{{ post.image }}.jpg" alt="{{ post.title }}"></div>
-			<div class="image-box-body">
-			  <h3 class="title">{{ post.title }}</h3>
-			  <a href="{{ site.url }}{{ post.url }}" class="link"><span>了解更多</span></a>
-			</div>
-		  </div>{% endfor %}
-		</div>
-	  </div>
-	</div>
-  </div>
-</div>
-<div class="section clearfix">
-  <div class="container">
-	<div class="row">
-	  <div class="col-md-12">
-		<h2><a href="{{ site.url }}/news/">新闻中心</a></h2>
-		<div class="owl-carousel index-news-list">{% for post in site.categories["news"] %}
-		  <div class="media row">
-			<div class="media-left col-xs-5">
-			  <a href="{{ site.url }}{{ post.url }}"><img class="media-object" src="{{ site.url }}/images/news/{{ post.image }}.jpg" alt="{{ post.title }}"></a>
-			</div>
-			<div class="media-body col-xs-7">
-			  <h4 class="media-heading"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a><small class="pull-right">{{ post.date | date:"%Y-%m-%d" }}</small></h4>{{ post.description }}
-			</div>
-		  </div>{% endfor %}
 		</div>
 	  </div>
 	</div>
