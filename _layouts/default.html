@@ -54,7 +54,7 @@
                       <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                           <li class="{% if page.category == 'home' %}active{% endif %}"><a href="{{ site.url }}">首页</a></li>
-                          <li class="{% if page.category == 'about' %}dropdown active{% else %}dropdown{% endif %}">
+                          <li class="dropdown {% if page.category == 'about' %}active{% endif %}">
                             <a href="{{ site.url }}/lanbei/" class="dropdown-toggle" data-toggle="dropdown">认识蓝贝</a>
                             <ul class="dropdown-menu">
                               <li><a href="{{ site.url }}/about/">企业简介</a></li>
@@ -64,44 +64,16 @@
                               <li><a href="{{ site.url }}/story/">品牌故事</a></li>
                             </ul>
                           </li>
-                          <li class="{% if page.category == 'products' %}dropdown mega-menu active{% else %}dropdown mega-menu{% endif %}">
-                            <a href="{{ site.url }}/products/" class="dropdown-toggle" data-toggle="dropdown">产品中心</a>
+                          <li class="{% if page.category == 'products' %}dropdown active{% else %}dropdown{% endif %}">
+                            <a class="dropdown-toggle" data-toggle="dropdown">产品中心</a>
                             <ul class="dropdown-menu">
-                              <li>
-                                <div class="row">
-                                  <div class="col-sm-4 col-md-6">
-                                    <h4>蓝贝电器 - 低碳生活专家|系统节能工程专家</h4>
-                                    <p>航天技术，军工产品</p>
-                                    <img src="/images/assets/products.png" alt="蓝贝电器产品">
-                                  </div>
-                                  <div class="col-sm-8 col-md-6">
-                                    <h4><a href="{{ site.url }}/products/">产品中心</a></h4>
-                                    <div class="row">
-                                      <div class="col-sm-6">
-                                        <div class="divider"></div>
-                                        <ul class="menu">
-                                          <li><a href="{{ site.url }}/intelligence/"><i class="fa fa-angle-right"></i>智能系列</a></li>
-                                          <li><a href="{{ site.url }}/kinetic-energy/"><i class="fa fa-angle-right"></i>聚能系列</a></li>
-                                          <li><a href="{{ site.url }}/an-neng/"><i class="fa fa-angle-right"></i>安能系列</a></li>
-                                          <li><a href="{{ site.url }}/energy/"><i class="fa fa-angle-right"></i>动能系列</a></li>
-                                        </ul>
-                                      </div>
-                                      <div class="col-sm-6">
-                                        <div class="divider"></div>
-                                        <ul class="menu">
-                                          <li><a href="{{ site.url }}/vaillant/"><i class="fa fa-angle-right"></i>威能系列</a></li>
-                                          <li><a href="{{ site.url }}/super/"><i class="fa fa-angle-right"></i>超能系列</a></li>
-                                          <li><a href="{{ site.url }}/almighty/"><i class="fa fa-angle-right"></i>全能系列</a></li>
-                                          <li><a href="{{ site.url }}/high-temperature-baking/"><i class="fa fa-angle-right"></i>高温烘烤系列</a></li>
-                                        </ul>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
+                              <li><a href="{{ site.url }}//">军工产品</a></li>
+                              <li><a href="{{ site.url }}//">给养器材单元</a></li>
+                              <li><a href="{{ site.url }}//">挂车配件</a></li>
+                              <li><a href="{{ site.url }}//">炊事车</a></li>
                             </ul>
                           </li>
-                          <li class="{% if page.category == 'join' %}dropdown active{% else %}dropdown{% endif %}">
+                          <li class="dropdown {% if page.category == 'join' %}active{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">招商加盟</a>
                             <ul class="dropdown-menu">
                               <li><a href="{{ site.url }}/join/">招商政策</a></li>
@@ -109,9 +81,8 @@
                               <li><a href="{{ site.url }}/stores/">加盟店查询</a></li>
                             </ul>
                           </li>
-
                           <li class="{% if page.category == 'case' %}active{% endif %}"><a href="{{ site.url }}/case/">工程案例</a></li>
-                          <li class="{% if page.category == 'support' %}dropdown active{% else %}dropdown{% endif %}">
+                          <li class="dropdown {% if page.category == 'support' %}active{% endif %}">
                             <a class="dropdown-toggle" data-toggle="dropdown">服务支持</a>
                             <ul class="dropdown-menu">
                               <li><a href="{{ site.url }}/support/">售后服务热线</a></li>
