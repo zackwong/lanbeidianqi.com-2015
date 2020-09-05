@@ -17,15 +17,6 @@
       <script src="/assets/html5shiv.min.js"></script>
       <script src="/assets/respond.min.js"></script>
     <![endif]-->
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?0a6e5f01f86e8f7820cae3c1ad8bcc15";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
   </head>
   <body class="front no-trans">
     <div class="scrollToTop"><i class="fa fa-chevron-up"></i></div>
@@ -73,24 +64,6 @@
                               <li><a href="{{ site.url }}//">炊事车</a></li>
                             </ul>
                           </li>
-                          <li class="dropdown {% if page.category == 'join' %}active{% endif %}">
-                            <a class="dropdown-toggle" data-toggle="dropdown">招商加盟</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="{{ site.url }}/join/">招商政策</a></li>
-                              <li><a href="{{ site.url }}/process/">加盟流程</a></li>
-                              <li><a href="{{ site.url }}/stores/">加盟店查询</a></li>
-                            </ul>
-                          </li>
-                          <li class="{% if page.category == 'case' %}active{% endif %}"><a href="{{ site.url }}/case/">工程案例</a></li>
-                          <li class="dropdown {% if page.category == 'support' %}active{% endif %}">
-                            <a class="dropdown-toggle" data-toggle="dropdown">服务支持</a>
-                            <ul class="dropdown-menu">
-                              <li><a href="{{ site.url }}/support/">售后服务热线</a></li>
-                              <li><a href="{{ site.url }}/faq/">常见故障识别及处理</a></li>
-                              <li><a href="{{ site.url }}/download/">技术资料下载</a></li>
-                            </ul>
-                          </li>
-                          <li class="{% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">新闻中心</a></li>
                           <li class="{% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">联系我们</a></li>
                         </ul>
                       </div>
@@ -127,99 +100,13 @@
                 </div>
               </div>
               <div class="space-bottom hidden-lg hidden-xs"></div>
-              <div class="col-sm-6 col-md-2">
-                <div class="footer-content">
-                  <h2>栏目导航</h2>
-                  <nav>
-                    <ul class="nav nav-pills nav-stacked">
-                      <li><a href="{{ site.url }}/about/">认识蓝贝</a></li>
-                      <li><a href="{{ site.url }}/join/">招商加盟</a></li>
-                      <li><a href="{{ site.url }}/case/">工程案例</a></li>
-                      <li><a href="{{ site.url }}/support/">服务支持</a></li>
-                      <li><a href="{{ site.url }}/news/">新闻中心</a></li>
-                      <li><a href="{{ site.url }}/contact/">联系我们</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 col-md-offset-1">
-                <div class="footer-content">
-                  <h2>产品中心</h2>
-                  <div class="gallery row">
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/intelligence.jpg" alt="智能系列">
-                        <a href="{{ site.url }}/intelligence/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/kinetic-energy.jpg" alt="聚能系列">
-                        <a href="{{ site.url }}/kinetic-energy/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/an-neng.jpg" alt="安能系列">
-                        <a href="{{ site.url }}/an-neng/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/energy.jpg" alt="动能系列">
-                        <a href="{{ site.url }}/energy/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/vaillant.jpg" alt="威能系列">
-                        <a href="{{ site.url }}/vaillant/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/super.jpg" alt="超能系列">
-                        <a href="{{ site.url }}/super/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/almighty.jpg" alt="全能系列">
-                        <a href="{{ site.url }}/almighty/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="gallery-item col-xs-4">
-                      <div class="overlay-container">
-                        <img src="/images/assets/high-temperature-baking.jpg" alt="高温烘烤系列">
-                        <a href="{{ site.url }}/high-temperature-baking/" class="overlay small">
-                          <i class="fa fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="space-bottom hidden-lg hidden-xs"></div>
           </div>
         </div>
         <div class="subfooter">
           <div class="container">
-            <p class="text-center">Copyright © 2004-2019 佛山市顺德区蓝贝电器设备有限公司 | <a href="{{ site.url }}/sitemap.xml">Sitemap</a></p>
+            <p class="text-center">Copyright © 2004-2020 佛山市顺德区蓝贝电器设备有限公司 | <a href="{{ site.url }}/sitemap.xml">Sitemap</a></p>
           </div>
         </div>
       </footer>
