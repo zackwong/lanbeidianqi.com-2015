@@ -6,7 +6,8 @@ layout: default
     <div class="row">
 	  <div class="col-md-12">
 	    <ol class="breadcrumb">
-		  <li><i class="fa fa-home pr-10"></i><a href="{{ site.url }}">首页</a></li>
+		  <li><i class="fa fa-home pr-10"></i><a href="{{ site.url }}">首页</a></li>{% if page.layout == 'products-article' %}
+		  <li><a href="{{ site.url }}/{{ page.category }}/">{{ page.type }}</a></li>{% endif %}
 		  <li class="active">{{ page.title }}</li>
 		</ol>
 	  </div>
