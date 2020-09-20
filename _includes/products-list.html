@@ -10,7 +10,7 @@
   </div>
   <div class="gray-bg section">
     <div class="container">
-      <div class="isotope-container row grid-space-10">{% for post in site.categories["jungong"] %}
+      <div class="isotope-container row grid-space-10">{% for post in site.categories["products"] %}{% if post.type-en == page.type-en %}
       <div class="col-sm-6 col-md-4 isotope-item">
       <div class="box-style-1 white-bg">
         <div class="overlay-container">
@@ -20,7 +20,7 @@
       <h3>{{ post.title }}</h3>
       <a href="{{ site.url }}{{ post.url }}" class="btn btn-default">查看详情</a>
       </div>
-    </div>{% endfor %}
+    </div>{% endif %}{% endfor %}
     </div>
     </div>
   </div>
